@@ -26,3 +26,9 @@ func (t *Task) Done() {
 	t.IsDone = true
 	t.DoneAt = &doneTime
 }
+
+func (t *Task) Undone() {
+	t.IsDone = false
+	t.DoneAt = nil
+
+}
